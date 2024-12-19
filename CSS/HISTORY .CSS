@@ -1,0 +1,237 @@
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../IMAGES/background%20image%20of%20body.jpg);
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #ba8300;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(228, 228, 228, 0.1);
+    border-bottom: 3px solid white;
+}
+
+.navbar-brand img {
+    border-radius: 50%;
+}
+
+.navbar-brand span {
+    font-weight: bold;
+    color: #f0f0f0;
+}
+
+.navbar-nav .nav-link {
+    color: #f0f0f0;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #000000 !important;
+}
+
+/* Icon color for navbar */
+.navbar .nav-item i,
+.navbar .nav-item svg {
+    color: #A77500;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar .nav-item i:hover,
+.navbar .nav-item svg:hover {
+    color: #A77500;
+}
+
+/* Card Styles */
+.card {
+    border: 70px solid white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    background-color: #fff;
+}
+
+.card img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 800px;
+}
+
+h5.card-title {
+    font-weight: bold;
+    color: #A77500;
+}
+
+/* Underlined Text Styles */
+u {
+    color: #A77500;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40;
+    color: white;
+    border-top: 3px solid #A77500;
+    font-family: serif;
+}
+
+footer h5 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+footer a {
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #A77500;
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Unordered List Styles */
+ul {
+    padding-left: 20px;
+}
+
+/* Additional Styles */
+.hassan {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.accordion-item {
+    border: 3px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-weight: bold;
+    color: #A77500;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+/* Slider Styles */
+.slider {
+    max-width: 100%;
+    height: 400px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+.slider-nav {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.slider-nav button {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.slider-nav button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .carousel-inner img {
+        height: 300px;
+    }
+
+    .card-img-top {
+        height: 150px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+}
+
+/* Style for the navbar toggler button */
+.navbar-toggler {
+    border: none;
+    background-color: #A77500;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-toggler:hover {
+    background-color: #A77500;
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon {
+    transform: rotate(0deg);
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+    transform: rotate(360deg);
+}
+
+@media (max-width: 767px) {
+    .navbar-toggler {
+        padding: 0.5rem;
+    }
+    .navbar-toggler-icon {
+        background-color: white;
+        width: 35px;
+        height: 4px;
+    }
+}

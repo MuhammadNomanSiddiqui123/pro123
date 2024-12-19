@@ -1,0 +1,275 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0e0e0e;
+    color: #f0f0f0;
+    background-image: url('../IMAGES/background%20image%20of%20body.jpg');
+    margin: 0;
+    padding: 0;
+}
+
+/* Carousel Styles */
+.carousel-inner img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.carousel-caption h5 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption p {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Card Styles */
+.card {
+    margin-bottom: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    color: #0e0e0e;
+}
+
+.btn-primary {
+    background-color: #A77500;
+    border: none;
+    font-size: 14px;
+}
+
+.btn-primary:hover {
+    background-color: #D3BA7F;
+    margin-left: 10px;
+}
+
+.btn-center {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40;
+    color: white;
+    margin-top: 30px;
+    font-family: serif;
+}
+
+footer h5 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+footer a {
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #A77500;
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.8rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .carousel-inner img {
+        height: 250px;
+    }
+
+    .card-img-top {
+        height: 180px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-inner img {
+        height: 220px;
+    }
+
+    .card-img-top {
+        height: 150px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.2rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+
+    footer h5 {
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-inner img {
+        height: 200px;
+    }
+
+    .card-img-top {
+        height: 120px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.1rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+
+    footer h5 {
+        font-size: 0.9rem;
+    }
+
+    footer p {
+        font-size: 0.7rem;
+    }
+}
+/* Navbar Styles */
+.navbar {
+    background-color: #ba8300;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(228, 228, 228, 0.1);
+    border-bottom: 3px solid white;
+}
+
+.navbar-brand img {
+    border-radius: 50%;
+}
+
+.navbar-brand span {
+    font-weight: bold;
+    color: #f0f0f0;
+}
+
+.navbar-nav .nav-link {
+    color: #f0f0f0;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #000000 !important;
+}
+
+.navbar-nav .nav-link:focus {
+    outline: 2px solid #000000;
+    outline-offset: 2px;
+}
+
+/* Icon color for navbar */
+.navbar .nav-item i,
+.navbar .nav-item svg {
+    color: #A77500;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar .nav-item i:hover,
+.navbar .nav-item svg:hover {
+    color: #A77500;
+}
+
+/* Style for the navbar toggler button */
+.navbar-toggler {
+    border: none;
+    background-color: #A77500;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Optional: Custom hover effect for the button */
+.navbar-toggler:hover {
+    background-color: #A77500;
+}
+
+/* Optional: Change the icon appearance when navbar is expanded */
+.navbar-toggler.collapsed .navbar-toggler-icon {
+    transform: rotate(0deg);
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+    transform: rotate(360deg);
+}
+
+/* Optional: Animation when toggling */
+@media (max-width: 767px) {
+    .navbar-toggler {
+        padding: 0.5rem;
+    }
+    .navbar-toggler-icon {
+        background-color: white;
+        width: 35px;
+        height: 4px;
+    }
+}
+.card p-4 shadow-lg{
+    width: 200PX;
+}
+
